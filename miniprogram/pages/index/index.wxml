@@ -1,0 +1,21 @@
+
+<import src="../../templates/common-shoplist.wxml" />
+<van-row>
+  <van-col span="24">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}"  duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" >
+        <swiper-item>
+          <image src="{{item.url}}" class="img" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </van-col>
+</van-row>
+<van-row>
+  <van-col span="22" offset="1">
+    <van-search shape="round" value="{{ value }}" placeholder="请输入发型师或者门店名称" use-action-slot="true" bind:search="onSearch" style="position:relative;bottom:10px;">
+      <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
+  </van-col>
+</van-row>
+<template is="tempshopList" data="{{shopList}}" />

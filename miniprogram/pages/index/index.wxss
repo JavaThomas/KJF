@@ -1,0 +1,40 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.img{
+  width: 100%;
+}
+.cardLogo{
+   width: 100%;
+   height: 100%;
+}
+.locColor{
+  color: rgba(255, 0, 0, 0.63);
+  font-weight: 200%;
+}
+.buttonColor{
+  background-color: rgba(255, 0, 0, 0.678);
+  font-size: 13px;
+  letter-spacing:1px;
+  font-weight: 200%;
+  color: white;
+  vertical-align:middle;
+  width: 100%;
+  height: 35px;
+}
+.cardStyle{
+  width: 96%;
+  margin: 0 auto;
+  background: #f6f6f6;
+}
+.promotion{
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 53px;
+}

@@ -1,0 +1,75 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/**发型师题头**/
+.orderinfo{
+  background-color: white;
+}
+.barberPhoto{
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+
+}
+.barbernamefont{
+  font-size: 42px;
+  font-weight: 200%;
+}
+.waitfont{
+   font-size: 12px;
+   position: relative;
+   top: -10px;
+   color: rgba(179, 175, 175, 0.822);
+}
+/**end发型师题头**/
+.value-class {
+  flex: none !important;
+}
+.fontcenter{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.floatleft{
+  position: relative;
+  float: left;
+}
+/**底部确认栏**/
+.buttom{
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.pricefont{
+  font-size: 28px;
+  color: rgb(235, 41, 73);
+}
+.orderbutton{
+  width: 160px;
+  height: 40px;
+  background-color: rgb(235, 41, 73);
+  color: white;
+  font-size: 13px;
+  /*字体垂直居中*/
+  display: table-cell;
+  vertical-align:middle;
+}
+/**end底部确认栏**/
+
+.popupstyle{
+ width: 500px;
+ height: 200px;
+ background-color: white;
+font-size:24px;
+font-weight: 200%;
+/*字体垂直居中*/
+display: table-cell;
+vertical-align:middle;
+}

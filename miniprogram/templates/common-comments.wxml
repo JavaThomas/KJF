@@ -1,0 +1,51 @@
+<template name="commentList">
+  <view class="common-list">
+    <block wx:key="_id" wx:for="{{commentList}}">
+      <view>
+        <van-row>
+          <van-col span="4">
+            <view class='van-photo'>
+              <image class='userphoto' src='{{item.photo}}'></image>
+            </view>
+          </van-col>
+          <van-col span="16">
+            <view class='username'>{{item.name}}</view>
+          </van-col>
+          <van-col span="4">
+            <view class='usercomment'>
+              <van-rate value="{{item.satisfaction}}" size="{{ 25 }}" color="#f44" void-color="#eee" void-icon="star" />
+            </view>
+          </van-col>
+        </van-row>
+        <van-row>
+          <van-col span="4">
+          </van-col>
+          <van-col span="16" offset='4'>
+            <view class='commentfont'>{{item.content}}</view>
+          </van-col>
+          <van-col span="4">
+          </van-col>
+        </van-row>
+        <!--图片列表 -->
+         <van-row>
+         </van-row>
+        <view class='br' />
+        <van-row>
+          <van-col span="12" offset='4'>
+            <view class='commentparperfont'>发型师：{{item.barber}}</view>
+          </van-col>
+          <van-col span="4">
+            <view class='commentparperfont'>{{item.date}}</view>
+          </van-col>
+        </van-row>
+        <view class='br' />
+        <view class='hr' />
+        <view class='br' />
+        <van-row>
+          <button class='commentbutton'>查看全部评价</button>
+          <view class='br' />
+        </van-row>
+      </view>
+    </block>
+  </view>
+</template>

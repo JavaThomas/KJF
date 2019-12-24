@@ -1,0 +1,43 @@
+<van-tabs swipeable>
+  <van-tab title="待消费">
+    <view class='ordertemplates'>
+      <view class='ordertitlefont'>未评价</view>
+      <van-cell icon="shop-o" is-link>
+        <view slot="title">
+          <view class="van-cell-text">岗头工作室</view>
+        </view>
+      </van-cell>
+      <van-cell>
+        <van-row>
+          <view class='titlefont'>排队号码</view>
+          <view class='textfont'>A006</view>
+        </van-row>
+        <van-row>
+          <view class='titlefont'>发 型 师</view>
+          <view class='textfont' style='color:red'>Kebi</view>
+        </van-row>
+        <van-row>
+          <view class='titlefont'>服务项目</view>
+          <view class='textfont' >洗剪吹</view>
+        </van-row>
+       <van-row>
+          <view class='titlefont'>合计</view>
+          <view class='textfont' >￥38</view>
+        </van-row><van-row>
+          <view class='titlefont'>取号时间</view>
+          <view class='textfont' >2019-08-04 15:09:52</view>
+        </van-row>
+      </van-cell>
+      <van-cell >
+         <van-button size="small" type="danger">去评价</van-button>
+      </van-cell>
+    </view>
+  </van-tab>
+  <van-tab title="服务中">
+  </van-tab>
+  <van-tab title="已完成">
+  </van-tab>
+  <van-tab title="已取号/过号">
+
+  </van-tab>
+</van-tabs>

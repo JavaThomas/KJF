@@ -1,0 +1,140 @@
+<!--storeInfo-->
+<import src="../../templates/common-barberlist.wxml" />
+<import src="../../templates/common-comments.wxml" />
+<view class='shopbackgroundimg'>
+  <view class='shopinfo'>
+    <van-row>
+      <text class='title'>{{shopdetail[0].name}}</text>
+    </van-row>
+    <van-row>
+      <view wx:for="{{shopdetail[0].promotion}}" wx:for-index="idx" wx:for-item="itemName">
+        <view wx:if="{{idx==0}}" class='promotion'>
+          <van-tag text-color="white" plain>儿童特惠</van-tag>
+        </view>
+        <view wx:if="{{idx==1}}" class='promotion'>
+          <van-tag  text-color="white" plain>情侣特价</van-tag>
+        </view>
+      </view>
+    </van-row>
+    <van-row>
+      <text class='textfont'> 营业时间 : 早9:00~晚10:00</text>
+    </van-row>
+    <van-row>
+      <van-col span="20">
+        <text class='textfont'> {{shopdetail[0].loc}}</text>
+      </van-col>
+      <van-col span="4">
+        <van-icon name="location-o" color='white' />
+      </van-col>
+    </van-row>
+  </view>
+  <view class="eventplaning">
+    <van-row>
+      <van-col span="2">
+        <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/8.png?sign=134b51478e6408335d84155f59444fd6&t=1566356923" color='#b38600' size='25px' />
+      </van-col>
+      <van-col span="18">
+        <text class='textfont'>邀请好友奖励30元</text>
+      </van-col>
+    </van-row>
+  </view>
+  <view>
+  <canvas class="shopcanvas" canvas-id="shopCanvas"></canvas>
+  </view>
+</view>
+<canvas style="width: 100%; height: 70px;top:151px" canvas-id="shopCanvas"></canvas>
+<view>
+  <van-row class='barbertitle'>
+    <text class='servicefont'>理发师</text>
+  </van-row>
+  <template is="barberList" data="{{barberList}}" />
+</view>
+<view class='bgbr' />
+<view>
+  <view class='commenttitle'>
+    <van-row class='servicetitle'>
+      <text class='servicefont'>服务评价</text>
+    </van-row>
+    <view class='br' />
+    <van-row>
+      <van-col span="12">
+        <view class='servicetitlefontstyle'>4.8</view>
+      </van-col>
+      <van-col span="12">
+        <view class='servicetitlefontstyle'>4800</view>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col span="12">
+        <view class='servicefontstyle'>评价</view>
+      </van-col>
+      <van-col span="12">
+        <view class='servicefontstyle'>评论数</view>
+      </van-col>
+    </van-row>
+    <view class='br' />
+    <view class='hr' />
+  </view>
+</view>
+<!--评论模板-->
+ <template is="commentList" data="{{commentList}}" />
+<view class='bgbr' />
+<!--服务标准-->
+<view class="serviebottom">
+  <van-row class='servicetitle'>
+    <text class='servicefont'>服务体系</text>
+  </van-row>
+  <view class="br"></view>
+  <van-row>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+  </van-row>
+  <van-row>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+    <van-col span="3">
+      <van-icon name="https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/6.png?sign=60b29d11712e4091123afa4098fe2bb5&t=1566462155" size="40px" />
+
+    </van-col>
+    <van-col span="9">
+      <text class='buttomfont'>专注剪发服务</text>
+    </van-col>
+  </van-row>
+  <view class="br" />
+  <view class="hr" />
+  <view class="br" />
+  <view class="br" />
+</view>

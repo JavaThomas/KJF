@@ -1,0 +1,78 @@
+<view class='persontop'>
+  <view class='br' />
+  <view class='br' />
+  <van-row>
+    <van-col span="6" offset='3'>
+      <image class='userimg' src='https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/7.jpg?sign=3a9f228bbeb460addd228c2ebe862be7&t=1564025622'></image>
+    </van-col>
+    <van-col span="5">
+      <van-row>
+        <text>Thomas</text>
+      </van-row>
+      <van-row>
+        <van-tag color="black" size="medium">绑定手机号</van-tag>
+      </van-row>
+    </van-col>
+  </van-row>
+    <view class='br' />
+  <van-row>
+    <van-notice-bar mode="link" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
+  </van-row>
+</view>
+
+<view>
+  <view class='dbr'/>
+  <van-row>
+    <van-col span="4" offset = '4'>
+      <van-row>
+       <van-icon name="cart-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>我的订单</text> 
+        </van-row>
+    </van-col>
+     <van-col span="4" offset ='3'>
+       <van-row>
+       <van-icon name="balance-list-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>优惠券</text> 
+        </van-row>
+    </van-col>
+    <van-col span="4" offset ='3'>
+      <van-row>
+       <van-icon name="point-gift-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>邀请好友</text> 
+        </van-row>
+    </van-col>
+  </van-row>
+  <view class='dbr'/>
+  <van-row>
+    <van-col span="4" offset = '4'>
+      <van-row>
+       <van-icon name="clock-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>历史发型</text> 
+        </van-row>
+    </van-col>
+     <van-col span="4" offset ='3'>
+       <van-row>
+       <van-icon name="manager-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>个人档案</text> 
+        </van-row>
+    </van-col>
+    <van-col span="4" offset ='3'>
+      <van-row>
+       <van-icon name="envelop-o" size='30px' />
+        </van-row>
+       <van-row>
+       <text class='iconfont'>意见反馈</text> 
+        </van-row>
+    </van-col>
+  </van-row>
+</view>

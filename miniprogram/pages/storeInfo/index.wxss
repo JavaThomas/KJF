@@ -1,0 +1,174 @@
+/**index.wxss**/
+
+/**商店信息**/
+
+.shopbackgroundimg {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  background: url('https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/4.jpg?sign=a788c5bb287c86f141e8753bf404d61a&t=1566356222') no-repeat;
+  z-index: 1;
+}
+
+.shopbackgroundimg:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: inherit;
+  filter: blur(px);
+  z-index: 2;
+}
+
+.shopinfo {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.title {
+  font: 32px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.textfont {
+  font: 24px;
+  color: white;
+}
+.eventplaning{
+  position: relative;
+  width: 86%;
+  margin: 0 auto;
+  top: 20px;
+}
+.shopcanvas{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top:150px;
+}
+/**ene商店信息**/
+
+/**手艺人列表**/
+.barberlist{
+  margin: 20px auto;
+  width: 94%;
+  height: 140px;
+  box-shadow: 0 0 5px #8888882d;
+}
+.barbertitle{
+  position: relative;
+  left: 2%;
+  font-size: 20px;
+}
+.barberlistinner{
+  width: 94%;
+  height:100%;
+  position: relative;
+  margin: 0 auto;
+}
+.barberlistinnerleft{
+  width: 100%;
+  height:100%;
+}
+.barberPhoto {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 20px;
+  position: relative;
+}
+.barberlistinnerright{
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.progressstyle{
+  position: relative;
+  top: 25px;
+}
+.progressfont{
+  font-size: 12px;
+  position: relative;
+  margin: 0 auto;
+  top: 25px;
+}
+.barbernamefont{
+  font-size: 26px;
+  font-weight: 30%;
+}
+.barberprice{
+  text-align:center;
+  color: red;
+  font-size: 24px;
+}
+.buttonColor{
+  background-color: rgba(230, 49, 49, 0.836);
+  font-size: 14px;
+  letter-spacing:1px;
+  font-weight: 200%;
+  color: white;
+  vertical-align:middle;
+  width: 100%;
+  height: 35px;
+}
+.waitfont{
+   font-size: 12px;
+   position: relative;
+   top: -10px;
+   color: rgba(179, 175, 175, 0.822);
+}
+.waitstyle{
+  position: relative;
+  float: left;
+}
+/**end手艺人列表**/
+.bgbr{
+  height: 15px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.404);
+}
+
+/**评论**/
+.commenttitle{
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  top:15px;
+}
+.servicefont{
+  font-size: 20px;
+}
+.servicetitlefontstyle {
+  text-align: center;
+}
+.servicefontstyle {
+  font-size: 12px;
+  color: #88888856;
+  text-align: center;
+}
+.commentbutton{
+  height: 38px;
+  width: 120px;
+  position: relative;
+  margin: 0 auto;
+  border: solid 1px black;
+  font-size: 15px; 
+}
+/**end评论**/
+/**底部**/
+.serviebottom{
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  top:15px;
+}
+.buttomfont{
+    font-size:15px;
+    position: relative;
+    top: 10px;
+}
+/**end底部**/
+

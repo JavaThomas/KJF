@@ -1,0 +1,45 @@
+<template name="barberList">
+ <block wx:key="_id" wx:for="{{barberList}}">
+    <view class='barberlist'>
+      <view class='barberlistinner'>
+        <van-col span="5" offset='1'>
+          <view class="barberlistinnerleft">
+            <van-row>
+              <image class='barberPhoto' data-photo="{{item.photo}}" src="{{item.photo}}"></image>
+            </van-row>
+            <van-row class='progressstyle'>
+              <van-progress percentage="{{item.skill}}" color="black" />
+            </van-row>
+            <van-row class='progressfont'>
+              <text>手艺值</text>
+            </van-row>
+          </view>
+        </van-col>
+        <van-col span="16" offset='1'>
+          <view class='barberlistinnerright'>
+          <van-row>
+            <view class='barbernamefont' data-name="{{item.name}}" >{{item.name}}</view>
+          </van-row>
+          <van-row>
+            <van-col span='8' >
+              <text>￥</text><text class='barberprice'>38</text>
+            </van-col>
+            <van-col span='8'  >
+              <van-tag color="black" size="medium">特权{{item.price}}</van-tag>
+            </van-col>
+            <van-col span='8' class='barberexprience' >
+                <button class='buttonColor' bindtap="linkToOrder">取号</button>
+            </van-col>
+          </van-row>
+          <van-row>
+            <view  wx:for="{{item.waitnum}}"> 
+              <van-icon  class='waitstyle' name="manager-o" size='16px'/> 
+            </view>
+          </van-row>
+              <text class='waitfont' data-waitfont="{{item.waitnum.length}}">前面有{{item.waitnum.length}}人，约等待{{item.waitnum.length*15}}分钟</text>
+           </view>
+        </van-col>
+      </view>
+    </view>
+    </block>
+</template>

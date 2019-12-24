@@ -1,0 +1,121 @@
+/**app.wxss**/
+page {
+  background-color: rgba(250,250,250,0.90);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.br {
+  height: 20px;
+  width: 100%;
+}
+
+.hr {
+  border-bottom: 1px solid #00000028;
+}
+
+.sr {
+  border-right: 1px solid #00000028;
+}
+
+.panel {
+  box-shadow: 0 0 5px #4b4141a4;
+  margin: 0 auto;
+}
+
+button {
+  background: initial;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button::after {
+  border: none;
+}
+
+.parperphoto {
+  width: 100%;
+  height: 100px;
+}
+
+.bg {
+  background-color: blue;
+}
+
+.van-parpername {
+  font-size: 24px;
+  font-weight: 600%;
+}
+
+/*评论模板*/
+
+.userphoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.username {
+  position: relative;
+  height: 70px;
+  width: 70%;
+  top: 20px;
+}
+
+.usercomment {
+  position: relative;
+  top: 20px;
+}
+
+.commentfont {
+  font-size: 14px;
+  color: #4b4141a4;
+  font-weight: 80%;
+}
+
+.commentparperfont {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.377);
+  font-weight: 80%;
+}
+
+/*订单模板*/
+
+.ordertemplates {
+  border-radius: 10px;
+  height: 260px;
+  background-color: #222020cb;
+  margin: 25px;
+}
+
+.ordertitlefont {
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  top: 10px;
+  position: relative;
+}
+
+.titlefont {
+  position: relative;
+  float: left;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.textfont {
+  color: black;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+@import 'dist/common/index.wxss'

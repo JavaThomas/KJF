@@ -1,0 +1,104 @@
+<view class='parperbackgroundimg'>
+  <canvas style="width: 100%; height: 70px;top:151px" canvas-id="firstCanvas"></canvas>
+</view>
+<view>
+  <van-row>
+    <van-col span="5">
+      <image class='barberimg' src='https://796b-ykf-qjg3e-1259571526.tcb.qcloud.la/7.jpg?sign=3a9f228bbeb460addd228c2ebe862be7&t=1564025622'></image>
+    </van-col>
+    <van-col span="5">
+      <view class='barbernamefont'>Allen</view>
+    </van-col>
+    <van-col span="5" offset="9">
+      <van-row class='barberprice'>$48</van-row>
+      <van-row class='barberexprience'>
+        <van-tag color="black" size="medium">8.5年经验</van-tag>
+      </van-row>
+    </van-col>
+  </van-row>
+  <van-cell value="1888.1km"  icon="location-o" >
+    <view slot="title">
+      <view class="van-cell-text" style='color:black;c'>新宏天莎</view>
+    </view>
+  </van-cell>
+</view>
+<van-tabs sticky>
+  <van-tab title="服务评价">
+    <view class='br'/>
+     <van-row>
+      <van-col span="12">
+        <view class='servicetitlefontstyle'>4.8</view>
+      </van-col>
+      <van-col span="12">
+        <view class='servicetitlefontstyle'>4800</view>
+      </van-col>
+    </van-row>
+    <van-row>
+      <van-col span="12">
+        <view class='servicefontstyle'>评价</view>
+      </van-col>
+      <van-col span="12">
+        <view class='servicefontstyle'>评论数</view>
+      </van-col>
+    </van-row>
+    <view class='br' />
+    <view class='hr' />
+    <!--评论模板-->
+    <view>
+      <van-row>
+        <van-col span="4">
+          <view class='van-photo'>
+            <image class='userphoto' src='../../images/7.png'></image>
+          </view>
+          <!--  -->
+        </van-col>
+        <van-col span="16">
+          <view class='username'>{{userid}}</view>
+        </van-col>
+        <van-col span="4">
+          <view class='usercomment'>
+            <van-tag plain type="danger" size='large'>满意</van-tag>
+          </view>
+        </van-col>
+      </van-row>
+      <van-row>
+        <van-col span="4">
+        </van-col>
+        <van-col span="16" offset='4'>
+          <view class='commentfont'>{{commentinfo}}</view>
+        </van-col>
+        <van-col span="4">
+        </van-col>
+      </van-row>
+      <view class='br' />
+      <van-row>
+        <van-col span="16" offset='4'>
+          <view class='commentparperfont'>发型师：{{parperlist}}</view>
+        </van-col>
+        <van-col span="4">
+          <view class='commentparperfont'>{{timelist}}</view>
+        </van-col>
+      </van-row>
+      <view class='br'/>
+      <view class='hr'/>
+    </view>
+    </van-tab>
+  <van-tab title="剪发经验">
+  <van-steps
+  steps="{{ steps }}"
+  direction="vertical"
+  active-color="green"/>
+  </van-tab>
+  <van-tab title="Ta的作品">
+     <view class='view-production'>
+     <view class='productiontitle'>Ta的作品</view>
+      <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}"  class="production">
+        <block wx:for="{{imgUrls}}" >
+          <swiper-item >
+            <image src="{{item}}" class='productionimg'/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </van-tab>
+</van-tabs>

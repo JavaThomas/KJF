@@ -1,0 +1,45 @@
+<template name="tempshopList">
+  <view class="common-list">
+    <block wx:key="_id" wx:for="{{shopList}}">
+      <van-card class="cardStyle" title="{{item.name}}" thumb="{{item.shopimg}}" >
+        <view slot="desc" data-zbid="{{item._id}}" bind:tap="linkToStoreInfo">
+          <van-row>
+            <van-col span="8">洗剪吹 ￥{{item.price}}</van-col>
+            <van-col span="11">
+              <van-icon name="../../images/8.png" size='15px' />
+            </van-col>
+            <van-col class='locColor' span="5">离你最近</van-col>
+          </van-row>
+          <van-row>
+            <van-col span="16">
+              <view wx:for="{{item.promotion}}" wx:for-index="idx" wx:for-item="itemName">
+                <view wx:if="{{idx==0}}"  class='promotion'>
+                  <van-tag type="danger" plain>儿童特惠</van-tag>
+                </view>
+                <view wx:if="{{idx==1}}" class='promotion'>
+                  <van-tag color="#7232dd">情侣特价</van-tag>
+                </view>
+              </view>
+            </van-col>
+          </van-row>
+          <van-row>
+            <van-col span="2">
+              <van-icon name="gift-o" color='#b38600' size='15px' />
+            </van-col>
+            <van-col span="18">邀请好友奖励30元</van-col>
+          </van-row>
+          <van-row>
+            <van-col span="2">
+              <van-icon name="location-o" color='red' size='15px' />
+            </van-col>
+            <van-col span="10" bind:change="linkToStoreInfo">{{item.loc}}</van-col>
+            <van-col span="7" offset="5">
+              <button class='buttonColor'>去剪发</button>
+            </van-col>
+          </van-row>
+        </view>
+      </van-card>
+      <view class='hr' />
+    </block>
+  </view>
+</template>
